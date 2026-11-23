@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 400 500" width="400" height="500" data-character="pip">
+<title>Pip (fox)</title>
+<defs><clipPath id="pip-clip"><path d="M100,150 C95,95 130,85 200,85 C270,85 305,95 300,150 C302,230 305,330 312,400 C315,425 300,437 270,437 L130,437 C100,437 85,425 88,400 C95,330 98,230 100,150 Z"/></clipPath></defs>
+<g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="200" cy="462" rx="110" ry="14" fill="#000" opacity=".14"/>
+</g>
+<g id="tail" class="L-tail" inkscape:groupmode="layer" inkscape:label="tail" data-pivot="292 380">
+<path d="M285,395 C360,400 395,320 370,240 C355,295 330,330 292,338 Z" fill="#e98a43" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M370,240 C380,270 378,300 368,322 C356,300 360,268 370,240 Z" fill="#fff1de" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="ear-left" class="L-ear-left" inkscape:groupmode="layer" inkscape:label="ear-left" data-pivot="150 110">
+<path d="M112,150 L118,48 L190,96 Z" fill="#e98a43" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M130,118 L132,78 L164,100 Z" fill="#7a3d1c"/>
+</g>
+<g id="ear-right" class="L-ear-right" inkscape:groupmode="layer" inkscape:label="ear-right" data-pivot="250 110">
+<path d="M288,150 L282,48 L210,96 Z" fill="#e98a43" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M270,118 L268,78 L236,100 Z" fill="#7a3d1c"/>
+</g>
+<g id="leg-left" class="L-leg-left" inkscape:groupmode="layer" inkscape:label="leg-left" data-pivot="163 410">
+<rect x="138" y="400" width="50" height="54" rx="18" fill="#5b3424" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="leg-right" class="L-leg-right" inkscape:groupmode="layer" inkscape:label="leg-right" data-pivot="237 410">
+<rect x="212" y="400" width="50" height="54" rx="18" fill="#5b3424" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 285">
+<g transform="rotate(28 104 285)"><rect x="85" y="275" width="38" height="62" rx="19" fill="#e98a43" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/></g>
+</g>
+<g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 437">
+<g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
+<path d="M100,150 C95,95 130,85 200,85 C270,85 305,95 300,150 C302,230 305,330 312,400 C315,425 300,437 270,437 L130,437 C100,437 85,425 88,400 C95,330 98,230 100,150 Z" fill="#e98a43" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><g clip-path="url(#pip-clip)"><ellipse cx="200" cy="385" rx="78" ry="70" fill="#fff1de" stroke="#1d1a1a" stroke-width="5"/><ellipse cx="146" cy="246" rx="56" ry="34" fill="#fff1de"/><ellipse cx="254" cy="246" rx="56" ry="34" fill="#fff1de"/></g><path d="M100,150 C95,95 130,85 200,85 C270,85 305,95 300,150 C302,230 305,330 312,400 C315,425 300,437 270,437 L130,437 C100,437 85,425 88,400 C95,330 98,230 100,150 Z" fill="none" stroke="#1d1a1a" stroke-width="7"/>
+</g>
+<g id="marks" class="L-marks" inkscape:groupmode="layer" inkscape:label="marks">
+<path d="M188,140 l-3,8 M212,140 l3,8" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="eyes" class="L-eyes" inkscape:groupmode="layer" inkscape:label="eyes" data-pivot="200 206">
+<ellipse cx="152" cy="206" rx="11" ry="13" fill="#1d1a1a"/><circle cx="155.3" cy="200.8" r="3.5" fill="#fff"/><ellipse cx="248" cy="206" rx="11" ry="13" fill="#1d1a1a"/><circle cx="251.3" cy="200.8" r="3.5" fill="#fff"/>
+</g>
+<g id="blush" class="L-blush" inkscape:groupmode="layer" inkscape:label="blush">
+<ellipse cx="120" cy="238" rx="17" ry="9" fill="#f59aa6" opacity=".55"/><ellipse cx="280" cy="238" rx="17" ry="9" fill="#f59aa6" opacity=".55"/>
+</g>
+<g id="mouth" class="L-mouth" inkscape:groupmode="layer" inkscape:label="mouth" data-pivot="200 235">
+<path d="M193,226 q7,-5 14,0 q-7,8 -14,0 Z" fill="#1d1a1a"/><path d="M186,240 q7,8 14,0 q7,8 14,0" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 285">
+<g transform="rotate(-28 296 285)"><rect x="277" y="275" width="38" height="62" rx="19" fill="#e98a43" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/></g>
+</g>
+</svg>

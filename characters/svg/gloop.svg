@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 400 500" width="400" height="500" data-character="gloop">
+<title>Gloop (slime monster)</title>
+<defs></defs>
+<g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="200" cy="460" rx="135" ry="14" fill="#000" opacity=".14"/>
+</g>
+<g id="puddle" class="L-puddle" inkscape:groupmode="layer" inkscape:label="puddle" data-pivot="200 446">
+<ellipse cx="200" cy="446" rx="150" ry="16" fill="#5fb44a" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 285">
+<g transform="rotate(28 104 285)"><rect x="85" y="275" width="38" height="62" rx="19" fill="#8bd86f" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M100,345 q6,18 0,24 q-6,-6 0,-24 Z" fill="#8bd86f" stroke="#1d1a1a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/></g>
+</g>
+<g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 446">
+<g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
+<path d="M95,250 C95,140 140,95 200,95 C260,95 305,140 305,250 L306,360 C306,385 318,400 334,414 C350,430 338,446 312,446 L88,446 C62,446 50,430 66,414 C82,400 94,385 94,360 Z" fill="#8bd86f" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><ellipse cx="146" cy="150" rx="22" ry="12" transform="rotate(-35 146 150)" fill="#fff" opacity=".7"/><circle cx="168" cy="132" r="5" fill="#fff" opacity=".7"/>
+</g>
+<g id="bubbles" class="L-bubbles" inkscape:groupmode="layer" inkscape:label="bubbles">
+<circle cx="250" cy="360" r="9" fill="none" stroke="#4e9a3a" stroke-width="3" opacity=".6"/><circle cx="140" cy="380" r="6" fill="none" stroke="#4e9a3a" stroke-width="3" opacity=".6"/><circle cx="270" cy="300" r="5" fill="none" stroke="#4e9a3a" stroke-width="3" opacity=".6"/><circle cx="130" cy="320" r="4" fill="none" stroke="#4e9a3a" stroke-width="3" opacity=".6"/>
+</g>
+<g id="drips" class="L-drips" inkscape:groupmode="layer" inkscape:label="drips" data-pivot="200 250">
+<path d="M300,250 q12,30 2,44 q-12,-8 -2,-44 Z" fill="#8bd86f" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M110,220 q-10,26 -2,38 q10,-8 2,-38 Z" fill="#8bd86f" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="eye" class="L-eye" inkscape:groupmode="layer" inkscape:label="eye" data-pivot="200 205">
+<circle cx="200" cy="205" r="50" fill="#fff" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><circle cx="206" cy="212" r="22" fill="#1d1a1a"/><circle cx="214" cy="202" r="7" fill="#fff"/>
+</g>
+<g id="mouth" class="L-mouth" inkscape:groupmode="layer" inkscape:label="mouth" data-pivot="200 305">
+<path d="M148,292 Q200,338 252,292 Q200,306 148,292 Z" fill="#3a1f2a" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M210,312 q14,-8 22,-4 q-2,14 -16,14 Z" fill="#f2789a"/>
+</g>
+</g>
+<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 285">
+<g transform="rotate(-28 296 285)"><rect x="277" y="275" width="38" height="62" rx="19" fill="#8bd86f" stroke="#1d1a1a" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M300,345 q6,18 0,24 q-6,-6 0,-24 Z" fill="#8bd86f" stroke="#1d1a1a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/></g>
+</g>
+</svg>

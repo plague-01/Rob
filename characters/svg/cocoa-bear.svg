@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500" width="400" height="500" data-character="cocoa">
+<title>Cocoa (bear, male)</title>
+<defs><clipPath id="cocoa-clip"><path d="M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 324,268 312,300 C302,330 294,368 299,408 C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z"/></clipPath></defs>
+<g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="200" cy="452" rx="125" ry="13" fill="#000" opacity=".14"/>
+</g>
+<g id="ear-left" class="L-ear-left" inkscape:groupmode="layer" inkscape:label="ear-left" data-pivot="112 160">
+<circle cx="108" cy="140" r="34" fill="#a8693f" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="112" cy="136" r="16" fill="#d9a07a"/>
+</g>
+<g id="ear-right" class="L-ear-right" inkscape:groupmode="layer" inkscape:label="ear-right" data-pivot="288 160">
+<circle cx="292" cy="140" r="34" fill="#a8693f" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="288" cy="136" r="16" fill="#d9a07a"/>
+</g>
+<g id="tuft" class="L-tuft" inkscape:groupmode="layer" inkscape:label="tuft" data-pivot="198 146">
+<path d="M184,148 C182,126 192,118 198,112 C198,126 204,132 212,128 C210,138 206,144 204,148" fill="#a8693f" stroke="#1d1a1a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 440">
+<g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
+<path d="M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 324,268 312,300 C302,330 294,368 299,408 C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z" fill="#a8693f" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><g clip-path="url(#cocoa-clip)"><ellipse cx="146" cy="446" rx="46" ry="20" fill="#fff1e0"/><ellipse cx="254" cy="446" rx="46" ry="20" fill="#fff1e0"/></g><path d="M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 324,268 312,300 C302,330 294,368 299,408 C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z" fill="none" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round"/>
+</g>
+<g id="muzzle" class="L-muzzle" inkscape:groupmode="layer" inkscape:label="muzzle">
+<ellipse cx="200" cy="290" rx="40" ry="27" fill="#d6a27a"/>
+</g>
+<g id="brows" class="L-brows" inkscape:groupmode="layer" inkscape:label="brows" data-pivot="200 220">
+<circle cx="186" cy="222" r="3.5" fill="#1d1a1a"/><path d="M212,216 l7,6" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="eyes" class="L-eyes" inkscape:groupmode="layer" inkscape:label="eyes" data-pivot="200 258">
+<circle cx="150" cy="258" r="14" fill="#1d1a1a"/><circle cx="155" cy="252" r="4.5" fill="#fff"/><circle cx="250" cy="258" r="14" fill="#1d1a1a"/><circle cx="255" cy="252" r="4.5" fill="#fff"/>
+</g>
+<g id="blush" class="L-blush" inkscape:groupmode="layer" inkscape:label="blush">
+<ellipse cx="118" cy="292" rx="17" ry="9" fill="#f07f86" opacity=".45"/><ellipse cx="282" cy="292" rx="17" ry="9" fill="#f07f86" opacity=".45"/>
+</g>
+<g id="nose" class="L-nose" inkscape:groupmode="layer" inkscape:label="nose" data-pivot="200 278">
+<ellipse cx="200" cy="278" rx="10" ry="7" fill="#1d1a1a"/><ellipse cx="197" cy="276" rx="3" ry="2" fill="#fff" opacity=".7"/>
+</g>
+<g id="mouth-open" class="L-mouth-open" inkscape:groupmode="layer" inkscape:label="mouth-open" data-pivot="200 304">
+<path d="M186,292 q7,6 14,0 q7,6 14,0" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M188,296 C186,326 214,326 212,296 Z" fill="#f2878f" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M192,304 C194,318 206,318 208,304" fill="#ffb3b8"/>
+</g>
+<g id="mouth-closed" class="L-mouth-closed" inkscape:groupmode="layer" inkscape:label="mouth-closed" data-pivot="200 294" style="display:none">
+<path d="M186,292 q7,9 14,0 q7,9 14,0" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 332">
+<path d="M102,330 C66,344 66,378 94,390" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M102,330 C66,344 66,378 94,390" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 332">
+<path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -31,8 +31,16 @@ def L(name, content, pivot=None, hidden=False):
             f'inkscape:label="{name}"{piv}{hid}>\n{content}\n</g>')
 
 
-def noodle(d, fill, w=17):
-    return (f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{w + 14}" stroke-linecap="round" stroke-linejoin="round"/>'
+def shoulder_mask(mid, clip_id, cx, cy, r=40):
+    """Hide the arm outline where it overlaps the body near the shoulder, so the arm reads as attached."""
+    return (f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500">'
+            f'<rect width="400" height="500" fill="#fff"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#000" clip-path="url(#{clip_id})"/></mask>')
+
+
+def noodle(d, fill, w=17, mask=None):
+    m = f' mask="url(#{mask})"' if mask else ""
+    return (f'<path d="{d}"{m} fill="none" stroke="{INK}" stroke-width="{w + 14}" stroke-linecap="round" stroke-linejoin="round"/>'
             f'<path d="{d}" fill="none" stroke="{fill}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
@@ -105,12 +113,15 @@ def bear(key, fur, ear_in, muzzle, female, wave_side):
         layers.append(extra)  # tuft sits behind the head outline
     layers += [
         L("body", "\n".join(body_inner), (200, 440)),
-        L("arm-left", noodle(arm_l, fur), (104, 332)),
-        L("arm-right", noodle(arm_r, fur), (296, 332)),
+        L("arm-left", noodle(arm_l, fur, mask=f"{key}-arm-left-m"), (104, 332)),
+        L("arm-right", noodle(arm_r, fur, mask=f"{key}-arm-right-m"), (296, 332)),
     ]
     if female:
         layers.append(extra)  # bow sits on top of the ear
-    return "\n".join(layers), f'<clipPath id="{key}-clip"><path d="{BODY}"/></clipPath>'
+    defs = (f'<clipPath id="{key}-clip"><path d="{BODY}"/></clipPath>'
+            + shoulder_mask(f"{key}-arm-left-m", f"{key}-clip", 104, 332, r=40 if wave_side == "left" else 22)
+            + shoulder_mask(f"{key}-arm-right-m", f"{key}-clip", 296, 332, r=40 if wave_side == "right" else 22))
+    return "\n".join(layers), defs
 
 
 BEARS = {

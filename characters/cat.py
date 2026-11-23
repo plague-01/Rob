@@ -34,9 +34,17 @@ def L(name, content, pivot=None, hidden=False):
             f'inkscape:label="{name}"{piv}{hid}>\n{content}\n</g>')
 
 
-def noodle(d, fill, w=17):
+def shoulder_mask(mid, clip_id, cx, cy, r=40):
+    """Hide the arm outline where it overlaps the body near the shoulder, so the arm reads as attached."""
+    return (f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500">'
+            f'<rect width="400" height="500" fill="#fff"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#000" clip-path="url(#{clip_id})"/></mask>')
+
+
+def noodle(d, fill, w=17, mask=None):
     """Arm/tail drawn as a thick outlined stroke."""
-    return (f'<path d="{d}" fill="none" stroke="{INK}" stroke-width="{w + 14}" stroke-linecap="round" stroke-linejoin="round"/>'
+    m = f' mask="url(#{mask})"' if mask else ""
+    return (f'<path d="{d}"{m} fill="none" stroke="{INK}" stroke-width="{w + 14}" stroke-linecap="round" stroke-linejoin="round"/>'
             f'<path d="{d}" fill="none" stroke="{fill}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
@@ -80,12 +88,14 @@ layers = [
         "</g>",
     ]), (200, 440)),
     # left arm waves up, right hand rests on the hip
-    L("arm-left", noodle("M104,334 C74,322 54,296 50,262", FUR), (104, 334)),
-    L("arm-right", noodle("M298,330 C334,344 334,378 306,390", FUR), (298, 330)),
+    L("arm-left", noodle("M104,334 C74,322 54,296 50,262", FUR, mask="tofu-arm-left-m"), (104, 334)),
+    L("arm-right", noodle("M298,330 C334,344 334,378 306,390", FUR, mask="tofu-arm-right-m"), (298, 330)),
 ]
 
 CHAR = "\n".join(layers)
-DEFS = f'<clipPath id="tofu-clip"><path d="{BODY}"/></clipPath>'
+DEFS = (f'<clipPath id="tofu-clip"><path d="{BODY}"/></clipPath>'
+        + shoulder_mask("tofu-arm-left-m", "tofu-clip", 104, 334)
+        + shoulder_mask("tofu-arm-right-m", "tofu-clip", 298, 330, r=22))
 HEAD = ('<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
         'xmlns:xlink="http://www.w3.org/1999/xlink"')
 

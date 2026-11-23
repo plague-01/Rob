@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500" width="400" height="500" data-character="cocoa">
 <title>Cocoa (bear, male)</title>
-<defs><clipPath id="cocoa-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath></defs>
+<defs><clipPath id="cocoa-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="cocoa-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="332" r="22" fill="#000" clip-path="url(#cocoa-clip)"/></mask><mask id="cocoa-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="296" cy="332" r="40" fill="#000" clip-path="url(#cocoa-clip)"/></mask></defs>
 <g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
 <ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>
 </g>
@@ -40,9 +40,9 @@
 </g>
 </g>
 <g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 332">
-<path d="M102,330 C66,344 66,378 94,390" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M102,330 C66,344 66,378 94,390" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M102,330 C66,344 66,378 94,390" mask="url(#cocoa-arm-left-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M102,330 C66,344 66,378 94,390" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 332">
-<path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M296,334 C326,322 346,296 350,262" mask="url(#cocoa-arm-right-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>

@@ -41,14 +41,12 @@ def noodle(d, fill, w=17):
 
 
 # One blob for head + body; ear tips at the top corners, two foot bumps at the bottom.
-BODY = ("M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 62,240 68,206 "
+BODY = ("M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 62,240 68,206 "
         "C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 "
-        "C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 324,268 312,300 "
-        "C302,330 294,368 299,408 C302,428 296,440 280,440 "
-        "L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z")
+        "C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z")
 
 layers = [
-    L("shadow", '<ellipse cx="200" cy="452" rx="125" ry="13" fill="#000" opacity=".14"/>'),
+    L("shadow", '<ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>'),
     L("tail", noodle("M292,410 C352,410 372,350 352,300 C342,276 360,258 376,270", FUR)
               + f'<path d="M352,300 C342,276 360,258 376,270" fill="none" stroke="{FUR_DK}" '
                 f'stroke-width="17" stroke-linecap="round"/>', (292, 405)),
@@ -60,8 +58,8 @@ layers = [
           f'<path d="M100,134 C108,150 122,160 140,164 C122,158 108,148 100,134 Z" fill="{EAR_IN}" stroke="{EAR_IN}" stroke-width="14" stroke-linejoin="round"/>'
           f'<path d="M300,132 C292,148 278,158 260,162 C278,156 292,146 300,132 Z" fill="{EAR_IN}" stroke="{EAR_IN}" stroke-width="14" stroke-linejoin="round"/>'
           # cream paw tips + belly hint
-          f'<ellipse cx="146" cy="446" rx="46" ry="20" fill="{PAW}"/>'
-          f'<ellipse cx="254" cy="446" rx="46" ry="20" fill="{PAW}"/>'
+          f'<ellipse cx="140" cy="452" rx="52" ry="22" fill="{PAW}"/>'
+          f'<ellipse cx="260" cy="452" rx="52" ry="22" fill="{PAW}"/>'
           f'</g>'
           f'<path d="{BODY}" fill="none" stroke="{INK}" stroke-width="8" stroke-linejoin="round"/>'
           f''),
@@ -145,7 +143,7 @@ scene = f'''{HEAD} viewBox="0 0 {W} {H}" width="{W}" height="{H}">
 {rail}
 <rect x="0" y="796" width="{W}" height="{H - 796}" fill="url(#floor)"/>
 <path d="M270,0 L450,0 L620,860 L100,860 Z" fill="url(#beam)"/>
-<g transform="translate(140,1298) scale(1.1,-1.1)" filter="url(#shade)" opacity=".45"><use href="#tofu"/></g>
+<g transform="translate(140,1313) scale(1.1,-1.1)" filter="url(#shade)" opacity=".45"><use href="#tofu"/></g>
 <g transform="translate(140,330) scale(1.1)"><use href="#tofu"/></g>
 </svg>
 '''

@@ -37,10 +37,9 @@ def noodle(d, fill, w=17):
 
 
 # Head + body blob with flared top corners and two foot bumps.
-BODY = ("M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 60,240 66,200 "
+BODY = ("M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 "
         "C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 "
-        "C320,150 330,170 334,200 C340,240 324,268 312,300 C302,330 294,368 299,408 "
-        "C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z")
+        "C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z")
 
 ARMS = {
     "left-up": "M104,334 C74,322 54,296 50,262",
@@ -79,8 +78,8 @@ def bear(key, fur, ear_in, muzzle, female, wave_side):
         L("body-base",
           f'<path d="{BODY}" {o(fur)}/>'
           f'<g clip-path="url(#{key}-clip)">'
-          f'<ellipse cx="146" cy="446" rx="46" ry="20" fill="{PAW}"/>'
-          f'<ellipse cx="254" cy="446" rx="46" ry="20" fill="{PAW}"/></g>'
+          f'<ellipse cx="140" cy="452" rx="52" ry="22" fill="{PAW}"/>'
+          f'<ellipse cx="260" cy="452" rx="52" ry="22" fill="{PAW}"/></g>'
           f'<path d="{BODY}" fill="none" stroke="{INK}" stroke-width="8" stroke-linejoin="round"/>'),
         L("muzzle", f'<ellipse cx="200" cy="290" rx="40" ry="27" fill="{muzzle}"/>'),
     ]
@@ -98,7 +97,7 @@ def bear(key, fur, ear_in, muzzle, female, wave_side):
     ear = lambda cx, ix: (f'<circle cx="{cx}" cy="140" r="34" {o(fur)}/>'
                           f'<circle cx="{ix}" cy="136" r="16" fill="{ear_in}"/>')
     layers = [
-        L("shadow", '<ellipse cx="200" cy="452" rx="125" ry="13" fill="#000" opacity=".14"/>'),
+        L("shadow", '<ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>'),
         L("ear-left", ear(108, 112), (112, 160)),
         L("ear-right", ear(292, 288), (288, 160)),
     ]
@@ -151,7 +150,7 @@ rail = '<rect x="0" y="738" width="720" height="8" fill="#1c1418"/>'
 rail += "".join(f'<rect x="{x}" y="738" width="7" height="58" fill="#1c1418"/>' for x in range(20, 720, 74))
 
 S = 0.92
-TY = FLOOR - 440 * S
+TY = FLOOR - 447 * S
 placed, defs = "", ""
 for key, tx in (("honey", -10), ("cocoa", 330)):
     content, clip = built[key]

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500" width="400" height="500" data-character="cocoa">
 <title>Cocoa (bear, male)</title>
-<defs><clipPath id="cocoa-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="cocoa-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="332" r="22" fill="#000" clip-path="url(#cocoa-clip)"/></mask><mask id="cocoa-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="296" cy="332" r="40" fill="#000" clip-path="url(#cocoa-clip)"/></mask></defs>
+<defs><clipPath id="cocoa-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="cocoa-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="332" r="400" fill="#000" clip-path="url(#cocoa-clip)"/></mask><mask id="cocoa-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="296" cy="332" r="400" fill="#000" clip-path="url(#cocoa-clip)"/></mask></defs>
 <g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
 <ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>
 </g>
@@ -12,6 +12,9 @@
 </g>
 <g id="tuft" class="L-tuft" inkscape:groupmode="layer" inkscape:label="tuft" data-pivot="198 146">
 <path d="M184,148 C182,126 192,118 198,112 C198,126 204,132 212,128 C210,138 206,144 204,148" fill="#a8693f" stroke="#1d1a1a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 332">
+<path d="M102,330 C54,336 44,366 86,378" fill="none" stroke="#1d1a1a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/><path d="M102,330 C54,336 44,366 86,378" fill="none" stroke="#a8693f" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 440">
 <g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
@@ -39,10 +42,10 @@
 <path d="M186,292 q7,9 14,0 q7,9 14,0" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
-<g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 332">
-<path d="M102,330 C66,344 66,378 94,390" mask="url(#cocoa-arm-left-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M102,330 C66,344 66,378 94,390" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="paw-left" class="L-paw-left" inkscape:groupmode="layer" inkscape:label="paw-left" data-pivot="104 332">
+<circle cx="89.8" cy="379.1" r="25" fill="#a8693f" stroke="#1d1a1a" stroke-width="7"/><path d="M115.5,380.2 L106.9,377.7" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M112.2,391.7 L103.6,389.3" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 332">
-<path d="M296,334 C326,322 346,296 350,262" mask="url(#cocoa-arm-right-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#a8693f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M296,334 C326,322 346,296 350,262" mask="url(#cocoa-arm-right-m)" fill="none" stroke="#1d1a1a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/><circle cx="350.5" cy="258.0" r="21" fill="#a8693f" stroke="#1d1a1a" stroke-width="7"/><path d="M296,334 C326,322 346,296 350,262" fill="none" stroke="#a8693f" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="350.1" cy="261.0" rx="6.5" ry="8.5" transform="rotate(-83.3 350.1 261.0)" fill="#f2a29b"/><circle cx="343.1" cy="248.2" r="3.4" fill="#f2a29b"/><circle cx="351.8" cy="247.1" r="3.4" fill="#f2a29b"/><circle cx="359.9" cy="250.2" r="3.4" fill="#f2a29b"/>
 </g>
 </svg>

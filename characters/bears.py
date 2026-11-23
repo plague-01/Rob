@@ -44,6 +44,43 @@ def noodle(d, fill, w=17, mask=None):
             f'<path d="{d}" fill="none" stroke="{fill}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
+def paw(d, fur, palm, r=21):
+    """Rounded paw at the end of an arm path. palm=True shows a pad + toe beans, else toe lines."""
+    import math, re
+    n = [float(v) for v in re.findall(r"-?\d+\.?\d*", d)]
+    cx, cy, ex, ey = n[-4], n[-3], n[-2], n[-1]
+    dx, dy = ex - cx, ey - cy
+    k = math.hypot(dx, dy) or 1
+    dx, dy = dx / k, dy / k
+    px, py = -dy, dx
+    ox, oy = ex + dx * 4, ey + dy * 4           # paw centre, nudged past the arm end
+    s = f'<circle cx="{ox:.1f}" cy="{oy:.1f}" r="{r}" fill="{fur}" stroke="{INK}" stroke-width="7"/><!--details-->'
+    if palm:
+        ang = math.degrees(math.atan2(dy, dx))
+        s += (f'<ellipse cx="{ox - dx * 3:.1f}" cy="{oy - dy * 3:.1f}" rx="6.5" ry="8.5" '
+              f'transform="rotate({ang:.1f} {ox - dx * 3:.1f} {oy - dy * 3:.1f})" fill="#f2a29b"/>')
+        for t in (-8.5, 0, 8.5):
+            bx = ox + dx * (11 - abs(t) * .25) + px * t
+            by = oy + dy * (11 - abs(t) * .25) + py * t
+            s += f'<circle cx="{bx:.1f}" cy="{by:.1f}" r="3.4" fill="#f2a29b"/>'
+    else:
+        for t in (-6, 6):
+            x1, y1 = ox + dx * r + px * t, oy + dy * r + py * t
+            x2, y2 = ox + dx * (r - 9) + px * t, oy + dy * (r - 9) + py * t
+            s += f'<path d="M{x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f}" {line(4)}/>'
+    return s
+
+
+def arm(d, fur, palm, mask=None, w=24):
+    """Noodle arm + paw. Order: arm outline, paw, arm fill (hides the wrist seam), paw details."""
+    m = f' mask="url(#{mask})"' if mask else ""
+    ink = f'<path d="{d}"{m} fill="none" stroke="{INK}" stroke-width="{w + 14}" stroke-linecap="round" stroke-linejoin="round"/>'
+    fill = f'<path d="{d}" fill="none" stroke="{fur}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>'
+    p = paw(d, fur, palm)
+    base, details = p.split("<!--details-->")
+    return ink + base + fill + details
+
+
 # Head + body blob with flared top corners and two foot bumps.
 BODY = ("M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 "
         "C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 "
@@ -51,9 +88,9 @@ BODY = ("M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320
 
 ARMS = {
     "left-up": "M104,334 C74,322 54,296 50,262",
-    "left-hip": "M102,330 C66,344 66,378 94,390",
+    "left-hip": "M102,330 C54,336 44,366 86,378",
     "right-up": "M296,334 C326,322 346,296 350,262",
-    "right-hip": "M298,330 C334,344 334,378 306,390",
+    "right-hip": "M298,330 C346,336 356,366 314,378",
 }
 
 
@@ -111,16 +148,21 @@ def bear(key, fur, ear_in, muzzle, female, wave_side):
     ]
     if not female:
         layers.append(extra)  # tuft sits behind the head outline
-    layers += [
-        L("body", "\n".join(body_inner), (200, 440)),
-        L("arm-left", noodle(arm_l, fur, mask=f"{key}-arm-left-m"), (104, 332)),
-        L("arm-right", noodle(arm_r, fur, mask=f"{key}-arm-right-m"), (296, 332)),
-    ]
+    # A waving arm sits in front of the body. A hand-on-hip arm is tucked behind the body
+    # (only the elbow shows) and its paw is a separate layer in front, with the same pivot.
+    behind, front = [], []
+    for side, d, piv in (("left", arm_l, (104, 332)), ("right", arm_r, (296, 332))):
+        if wave_side == side:
+            front.append(L(f"arm-{side}", arm(d, fur, True, mask=f"{key}-arm-{side}-m"), piv))
+        else:
+            behind.append(L(f"arm-{side}", noodle(d, fur, w=24), piv))
+            front.append(L(f"paw-{side}", paw(d, fur, False, r=25).replace("<!--details-->", ""), piv))
+    layers += behind + [L("body", "\n".join(body_inner), (200, 440))] + front
     if female:
         layers.append(extra)  # bow sits on top of the ear
     defs = (f'<clipPath id="{key}-clip"><path d="{BODY}"/></clipPath>'
-            + shoulder_mask(f"{key}-arm-left-m", f"{key}-clip", 104, 332, r=40 if wave_side == "left" else 22)
-            + shoulder_mask(f"{key}-arm-right-m", f"{key}-clip", 296, 332, r=40 if wave_side == "right" else 22))
+            + shoulder_mask(f"{key}-arm-left-m", f"{key}-clip", 104, 332, r=400)
+            + shoulder_mask(f"{key}-arm-right-m", f"{key}-clip", 296, 332, r=400))
     return "\n".join(layers), defs
 
 

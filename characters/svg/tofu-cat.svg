@@ -1,11 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500" width="400" height="500" data-character="tofu">
 <title>Tofu (cat)</title>
-<defs><clipPath id="tofu-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 62,240 68,206 C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="tofu-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="334" r="40" fill="#000" clip-path="url(#tofu-clip)"/></mask><mask id="tofu-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="298" cy="330" r="22" fill="#000" clip-path="url(#tofu-clip)"/></mask></defs>
+<defs><clipPath id="tofu-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 62,240 68,206 C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="tofu-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="334" r="400" fill="#000" clip-path="url(#tofu-clip)"/></mask><mask id="tofu-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="298" cy="330" r="400" fill="#000" clip-path="url(#tofu-clip)"/></mask></defs>
 <g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
 <ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>
 </g>
 <g id="tail" class="L-tail" inkscape:groupmode="layer" inkscape:label="tail" data-pivot="292 405">
 <path d="M292,410 C352,410 372,350 352,300 C342,276 360,258 376,270" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M292,410 C352,410 372,350 352,300 C342,276 360,258 376,270" fill="none" stroke="#e9a56b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/><path d="M352,300 C342,276 360,258 376,270" fill="none" stroke="#c97b3f" stroke-width="17" stroke-linecap="round"/>
+</g>
+<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="298 330">
+<path d="M298,330 C346,336 356,366 314,378" fill="none" stroke="#1d1a1a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/><path d="M298,330 C346,336 356,366 314,378" fill="none" stroke="#e9a56b" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 440">
 <g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
@@ -36,9 +39,9 @@
 </g>
 </g>
 <g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 334">
-<path d="M104,334 C74,322 54,296 50,262" mask="url(#tofu-arm-left-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M104,334 C74,322 54,296 50,262" fill="none" stroke="#e9a56b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104,334 C74,322 54,296 50,262" mask="url(#tofu-arm-left-m)" fill="none" stroke="#1d1a1a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/><circle cx="49.5" cy="258.0" r="21" fill="#e9a56b" stroke="#1d1a1a" stroke-width="7"/><path d="M104,334 C74,322 54,296 50,262" fill="none" stroke="#e9a56b" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="49.9" cy="261.0" rx="6.5" ry="8.5" transform="rotate(-96.7 49.9 261.0)" fill="#f2a29b"/><circle cx="40.1" cy="250.2" r="3.4" fill="#f2a29b"/><circle cx="48.2" cy="247.1" r="3.4" fill="#f2a29b"/><circle cx="56.9" cy="248.2" r="3.4" fill="#f2a29b"/>
 </g>
-<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="298 330">
-<path d="M298,330 C334,344 334,378 306,390" mask="url(#tofu-arm-right-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M298,330 C334,344 334,378 306,390" fill="none" stroke="#e9a56b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="paw-right" class="L-paw-right" inkscape:groupmode="layer" inkscape:label="paw-right" data-pivot="298 330">
+<circle cx="310.2" cy="379.1" r="25" fill="#e9a56b" stroke="#1d1a1a" stroke-width="7"/><path d="M287.8,391.7 L296.4,389.3" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M284.5,380.2 L293.1,377.7" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>

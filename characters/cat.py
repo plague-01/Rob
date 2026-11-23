@@ -48,16 +48,55 @@ def noodle(d, fill, w=17, mask=None):
             f'<path d="{d}" fill="none" stroke="{fill}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
+def paw(d, fur, palm, r=21):
+    """Rounded paw at the end of an arm path. palm=True shows a pad + toe beans, else toe lines."""
+    import math, re
+    n = [float(v) for v in re.findall(r"-?\d+\.?\d*", d)]
+    cx, cy, ex, ey = n[-4], n[-3], n[-2], n[-1]
+    dx, dy = ex - cx, ey - cy
+    k = math.hypot(dx, dy) or 1
+    dx, dy = dx / k, dy / k
+    px, py = -dy, dx
+    ox, oy = ex + dx * 4, ey + dy * 4           # paw centre, nudged past the arm end
+    s = f'<circle cx="{ox:.1f}" cy="{oy:.1f}" r="{r}" fill="{fur}" stroke="{INK}" stroke-width="7"/><!--details-->'
+    if palm:
+        ang = math.degrees(math.atan2(dy, dx))
+        s += (f'<ellipse cx="{ox - dx * 3:.1f}" cy="{oy - dy * 3:.1f}" rx="6.5" ry="8.5" '
+              f'transform="rotate({ang:.1f} {ox - dx * 3:.1f} {oy - dy * 3:.1f})" fill="#f2a29b"/>')
+        for t in (-8.5, 0, 8.5):
+            bx = ox + dx * (11 - abs(t) * .25) + px * t
+            by = oy + dy * (11 - abs(t) * .25) + py * t
+            s += f'<circle cx="{bx:.1f}" cy="{by:.1f}" r="3.4" fill="#f2a29b"/>'
+    else:
+        for t in (-6, 6):
+            x1, y1 = ox + dx * r + px * t, oy + dy * r + py * t
+            x2, y2 = ox + dx * (r - 9) + px * t, oy + dy * (r - 9) + py * t
+            s += f'<path d="M{x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f}" {line(4)}/>'
+    return s
+
+
+def arm(d, fur, palm, mask=None, w=24):
+    """Noodle arm + paw. Order: arm outline, paw, arm fill (hides the wrist seam), paw details."""
+    m = f' mask="url(#{mask})"' if mask else ""
+    ink = f'<path d="{d}"{m} fill="none" stroke="{INK}" stroke-width="{w + 14}" stroke-linecap="round" stroke-linejoin="round"/>'
+    fill = f'<path d="{d}" fill="none" stroke="{fur}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>'
+    p = paw(d, fur, palm)
+    base, details = p.split("<!--details-->")
+    return ink + base + fill + details
+
+
 # One blob for head + body; ear tips at the top corners, two foot bumps at the bottom.
 BODY = ("M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 62,240 68,206 "
         "C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 "
         "C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z")
 
+HIP = "M298,330 C346,336 356,366 314,378"
 layers = [
     L("shadow", '<ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>'),
     L("tail", noodle("M292,410 C352,410 372,350 352,300 C342,276 360,258 376,270", FUR)
               + f'<path d="M352,300 C342,276 360,258 376,270" fill="none" stroke="{FUR_DK}" '
                 f'stroke-width="17" stroke-linecap="round"/>', (292, 405)),
+    L("arm-right", noodle(HIP, FUR, w=24), (298, 330)),
     L("body", "\n".join([
         L("body-base",
           f'<path d="{BODY}" {o(FUR)}/>'
@@ -88,14 +127,15 @@ layers = [
         "</g>",
     ]), (200, 440)),
     # left arm waves up, right hand rests on the hip
-    L("arm-left", noodle("M104,334 C74,322 54,296 50,262", FUR, mask="tofu-arm-left-m"), (104, 334)),
-    L("arm-right", noodle("M298,330 C334,344 334,378 306,390", FUR, mask="tofu-arm-right-m"), (298, 330)),
+    L("arm-left", arm("M104,334 C74,322 54,296 50,262", FUR, True, mask="tofu-arm-left-m"), (104, 334)),
+    # hand-on-hip paw sits in front of the body; its arm is tucked behind (layer "arm-right" above)
+    L("paw-right", paw(HIP, FUR, False, r=25).replace("<!--details-->", ""), (298, 330)),
 ]
 
 CHAR = "\n".join(layers)
 DEFS = (f'<clipPath id="tofu-clip"><path d="{BODY}"/></clipPath>'
-        + shoulder_mask("tofu-arm-left-m", "tofu-clip", 104, 334)
-        + shoulder_mask("tofu-arm-right-m", "tofu-clip", 298, 330, r=22))
+        + shoulder_mask("tofu-arm-left-m", "tofu-clip", 104, 334, r=400)
+        + shoulder_mask("tofu-arm-right-m", "tofu-clip", 298, 330, r=400))
 HEAD = ('<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" '
         'xmlns:xlink="http://www.w3.org/1999/xlink"')
 

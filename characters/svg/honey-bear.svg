@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500" width="400" height="500" data-character="honey">
 <title>Honey (bear, female)</title>
-<defs><clipPath id="honey-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="honey-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="332" r="40" fill="#000" clip-path="url(#honey-clip)"/></mask><mask id="honey-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="296" cy="332" r="22" fill="#000" clip-path="url(#honey-clip)"/></mask></defs>
+<defs><clipPath id="honey-clip"><path d="M200,432 C190,432 184,446 166,447 C120,449 84,430 80,392 C76,350 84,320 82,290 C80,262 60,240 66,200 C70,170 80,150 102,144 C140,138 170,146 200,146 C230,146 262,138 298,144 C320,150 330,170 334,200 C340,240 320,262 318,290 C316,320 324,350 320,392 C316,430 280,449 234,447 C216,446 210,432 200,432 Z"/></clipPath><mask id="honey-arm-left-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="104" cy="332" r="400" fill="#000" clip-path="url(#honey-clip)"/></mask><mask id="honey-arm-right-m" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="500"><rect width="400" height="500" fill="#fff"/><circle cx="296" cy="332" r="400" fill="#000" clip-path="url(#honey-clip)"/></mask></defs>
 <g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
 <ellipse cx="200" cy="456" rx="125" ry="13" fill="#000" opacity=".14"/>
 </g>
@@ -9,6 +9,9 @@
 </g>
 <g id="ear-right" class="L-ear-right" inkscape:groupmode="layer" inkscape:label="ear-right" data-pivot="288 160">
 <circle cx="292" cy="140" r="34" fill="#d9a77f" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="288" cy="136" r="16" fill="#f4c9b0"/>
+</g>
+<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 332">
+<path d="M298,330 C346,336 356,366 314,378" fill="none" stroke="#1d1a1a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/><path d="M298,330 C346,336 356,366 314,378" fill="none" stroke="#d9a77f" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 440">
 <g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
@@ -34,10 +37,10 @@
 </g>
 </g>
 <g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 332">
-<path d="M104,334 C74,322 54,296 50,262" mask="url(#honey-arm-left-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M104,334 C74,322 54,296 50,262" fill="none" stroke="#d9a77f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104,334 C74,322 54,296 50,262" mask="url(#honey-arm-left-m)" fill="none" stroke="#1d1a1a" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/><circle cx="49.5" cy="258.0" r="21" fill="#d9a77f" stroke="#1d1a1a" stroke-width="7"/><path d="M104,334 C74,322 54,296 50,262" fill="none" stroke="#d9a77f" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="49.9" cy="261.0" rx="6.5" ry="8.5" transform="rotate(-96.7 49.9 261.0)" fill="#f2a29b"/><circle cx="40.1" cy="250.2" r="3.4" fill="#f2a29b"/><circle cx="48.2" cy="247.1" r="3.4" fill="#f2a29b"/><circle cx="56.9" cy="248.2" r="3.4" fill="#f2a29b"/>
 </g>
-<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="296 332">
-<path d="M298,330 C334,344 334,378 306,390" mask="url(#honey-arm-right-m)" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M298,330 C334,344 334,378 306,390" fill="none" stroke="#d9a77f" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="paw-right" class="L-paw-right" inkscape:groupmode="layer" inkscape:label="paw-right" data-pivot="296 332">
+<circle cx="310.2" cy="379.1" r="25" fill="#d9a77f" stroke="#1d1a1a" stroke-width="7"/><path d="M287.8,391.7 L296.4,389.3" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M284.5,380.2 L293.1,377.7" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <g id="bow" class="L-bow" inkscape:groupmode="layer" inkscape:label="bow" data-pivot="292 132">
 <g transform="rotate(18 292 132)"><path d="M292,132 L262,114 L262,150 Z" fill="#f58fae" stroke="#1d1a1a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><path d="M292,132 L322,114 L322,150 Z" fill="#f58fae" stroke="#1d1a1a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><circle cx="292" cy="132" r="9" fill="#f9b3c8" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/></g>

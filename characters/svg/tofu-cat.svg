@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 500" width="400" height="500" data-character="tofu">
+<title>Tofu (cat)</title>
+<defs><clipPath id="tofu-clip"><path d="M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 62,240 68,206 C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 324,268 312,300 C302,330 294,368 299,408 C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z"/></clipPath></defs>
+<g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="200" cy="452" rx="125" ry="13" fill="#000" opacity=".14"/>
+</g>
+<g id="tail" class="L-tail" inkscape:groupmode="layer" inkscape:label="tail" data-pivot="292 405">
+<path d="M292,410 C352,410 372,350 352,300 C342,276 360,258 376,270" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M292,410 C352,410 372,350 352,300 C342,276 360,258 376,270" fill="none" stroke="#e9a56b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/><path d="M352,300 C342,276 360,258 376,270" fill="none" stroke="#c97b3f" stroke-width="17" stroke-linecap="round"/>
+</g>
+<g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="200 440">
+<g id="body-base" class="L-body-base" inkscape:groupmode="layer" inkscape:label="body-base">
+<path d="M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 62,240 68,206 C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 324,268 312,300 C302,330 294,368 299,408 C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z" fill="#e9a56b" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><g clip-path="url(#tofu-clip)"><path d="M100,134 C108,150 122,160 140,164 C122,158 108,148 100,134 Z" fill="#f2a29b" stroke="#f2a29b" stroke-width="14" stroke-linejoin="round"/><path d="M300,132 C292,148 278,158 260,162 C278,156 292,146 300,132 Z" fill="#f2a29b" stroke="#f2a29b" stroke-width="14" stroke-linejoin="round"/><ellipse cx="146" cy="446" rx="46" ry="20" fill="#fff1e0"/><ellipse cx="254" cy="446" rx="46" ry="20" fill="#fff1e0"/></g><path d="M120,440 C104,440 98,428 101,408 C106,368 98,330 88,300 C76,268 62,240 68,206 C72,176 82,146 96,116 C114,138 130,154 152,160 C182,166 222,166 250,158 C272,152 288,136 304,114 C318,146 328,176 332,206 C338,240 324,268 312,300 C302,330 294,368 299,408 C302,428 296,440 280,440 L220,440 C215,428 207,423 200,423 C193,423 185,428 180,440 Z" fill="none" stroke="#1d1a1a" stroke-width="8" stroke-linejoin="round"/>
+</g>
+<g id="stripes" class="L-stripes" inkscape:groupmode="layer" inkscape:label="stripes">
+<path d="M186,172 l4,18 M200,170 v20 M214,172 l-4,18" fill="none" stroke="#c97b3f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(0,46)">
+<g id="brows" class="L-brows" inkscape:groupmode="layer" inkscape:label="brows" data-pivot="205 174">
+<circle cx="190" cy="176" r="3.5" fill="#1d1a1a"/><path d="M220,170 l6,6" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="eyes" class="L-eyes" inkscape:groupmode="layer" inkscape:label="eyes" data-pivot="204 212">
+<circle cx="150" cy="214" r="14" fill="#1d1a1a"/><circle cx="155" cy="208" r="4.5" fill="#fff"/><circle cx="254" cy="210" r="14" fill="#1d1a1a"/><circle cx="259" cy="204" r="4.5" fill="#fff"/>
+</g>
+<g id="blush" class="L-blush" inkscape:groupmode="layer" inkscape:label="blush">
+<ellipse cx="124" cy="246" rx="17" ry="9" fill="#f07f86" opacity=".45"/><ellipse cx="280" cy="242" rx="17" ry="9" fill="#f07f86" opacity=".45"/>
+</g>
+<g id="whiskers" class="L-whiskers" inkscape:groupmode="layer" inkscape:label="whiskers">
+<path d="M108,234 l-22,-4 M110,248 l-22,4 M294,230 l22,-4 M292,244 l22,4" fill="none" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="mouth-open" class="L-mouth-open" inkscape:groupmode="layer" inkscape:label="mouth-open" data-pivot="190 245">
+<path d="M190,236 q-10,0 -14,-6 M190,236 q10,0 14,-6" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M181,238 C182,262 200,266 202,244 Z" fill="#f2878f" stroke="#1d1a1a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M184,240 C186,254 196,256 199,246" fill="#ffb3b8"/>
+</g>
+<g id="mouth-closed" class="L-mouth-closed" inkscape:groupmode="layer" inkscape:label="mouth-closed" data-pivot="190 236" style="display:none">
+<path d="M176,232 q7,9 14,0 q7,9 14,0" fill="none" stroke="#1d1a1a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<g id="arm-left" class="L-arm-left" inkscape:groupmode="layer" inkscape:label="arm-left" data-pivot="104 334">
+<path d="M104,334 C74,322 54,296 50,262" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M104,334 C74,322 54,296 50,262" fill="none" stroke="#e9a56b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="arm-right" class="L-arm-right" inkscape:groupmode="layer" inkscape:label="arm-right" data-pivot="298 330">
+<path d="M298,330 C334,344 334,378 306,390" fill="none" stroke="#1d1a1a" stroke-width="31" stroke-linecap="round" stroke-linejoin="round"/><path d="M298,330 C334,344 334,378 306,390" fill="none" stroke="#e9a56b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

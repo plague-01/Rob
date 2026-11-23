@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 400 480" width="400" height="480" data-character="pepper">
+<title>Pepper (gray tuxedo tabby)</title>
+<g id="shadow" class="L-shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="215" cy="446" rx="130" ry="12" fill="#000" opacity=".12"/>
+</g>
+<g id="tail" class="L-tail" inkscape:groupmode="layer" inkscape:label="tail" data-pivot="282 414">
+<mask id="pepper-tail-clip" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="480"><path d="M282,414 C352,420 368,344 342,284 C334,264 348,248 364,258" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round"/></mask><path d="M282,414 C352,420 368,344 342,284 C334,264 348,248 364,258" fill="none" stroke="#2a2523" stroke-width="44" stroke-linecap="round"/><path d="M282,414 C352,420 368,344 342,284 C334,264 348,248 364,258" fill="none" stroke="#5c5d66" stroke-width="30" stroke-linecap="round"/><g mask="url(#pepper-tail-clip)"><path d="M316,404 l-8,-22" fill="none" stroke="#3c3d44" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M348,362 l-26,-4" fill="none" stroke="#3c3d44" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M350,312 l-26,2" fill="none" stroke="#3c3d44" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g id="body" class="L-body" inkscape:groupmode="layer" inkscape:label="body" data-pivot="210 437">
+<clipPath id="pepper-body-clip"><path d="M142,250 C120,300 104,362 110,410 C113,430 130,437 150,437 L272,437 C302,437 318,420 312,394 C306,350 286,292 262,250 Z"/></clipPath><path d="M142,250 C120,300 104,362 110,410 C113,430 130,437 150,437 L272,437 C302,437 318,420 312,394 C306,350 286,292 262,250 Z" fill="#5c5d66"/><g clip-path="url(#pepper-body-clip)"><path d="M150,262 C170,300 176,330 200,360 C224,330 230,300 250,262 Z" fill="#fffaf3"/><path d="M284,296 l-22,8" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M296,330 l-24,6" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M300,364 l-24,4" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M142,250 C120,300 104,362 110,410 C113,430 130,437 150,437 L272,437 C302,437 318,420 312,394 C306,350 286,292 262,250 Z" fill="none" stroke="#2a2523" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M262,437 C256,398 276,372 304,380" fill="none" stroke="#2a2523" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="leg-left" class="L-leg-left" inkscape:groupmode="layer" inkscape:label="leg-left" data-pivot="170 330">
+<clipPath id="pepper-legl-clip"><path d="M150,320 V420 C150,434 156,439 170,439 C184,439 190,434 190,420 V320 Z"/></clipPath><path d="M150,320 V420 C150,434 156,439 170,439 C184,439 190,434 190,420 V320 Z" fill="#fffaf3"/><g clip-path="url(#pepper-legl-clip)"></g><path d="M150,320 V420 C150,434 156,439 170,439 C184,439 190,434 190,420 V320" fill="none" stroke="#2a2523" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><path d="M163,438 v-11 M177,438 v-11" fill="none" stroke="#2a2523" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="leg-right" class="L-leg-right" inkscape:groupmode="layer" inkscape:label="leg-right" data-pivot="226 330">
+<clipPath id="pepper-legr-clip"><path d="M206,320 V420 C206,434 212,439 226,439 C240,439 246,434 246,420 V320 Z"/></clipPath><path d="M206,320 V420 C206,434 212,439 226,439 C240,439 246,434 246,420 V320 Z" fill="#fffaf3"/><g clip-path="url(#pepper-legr-clip)"></g><path d="M206,320 V420 C206,434 212,439 226,439 C240,439 246,434 246,420 V320" fill="none" stroke="#2a2523" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><path d="M219,438 v-11 M233,438 v-11" fill="none" stroke="#2a2523" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="head" class="L-head" inkscape:groupmode="layer" inkscape:label="head" data-pivot="200 280">
+<clipPath id="pepper-head-clip"><path d="M100,215 C92,170 100,130 118,108 L112,48 C140,58 162,74 176,92 C192,89 208,89 224,92 C238,74 260,58 288,48 L282,108 C300,130 308,170 300,215 C292,262 250,282 200,282 C150,282 108,262 100,215 Z"/></clipPath><path d="M100,215 C92,170 100,130 118,108 L112,48 C140,58 162,74 176,92 C192,89 208,89 224,92 C238,74 260,58 288,48 L282,108 C300,130 308,170 300,215 C292,262 250,282 200,282 C150,282 108,262 100,215 Z" fill="#5c5d66"/><g clip-path="url(#pepper-head-clip)"><path d="M96,282 L96,236 C140,232 172,226 188,192 L200,168 L212,192 C228,226 260,232 304,236 L304,282 Z" fill="#fffaf3"/><path d="M184,104 l3,24" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M200,98 v28" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M216,104 l-3,24" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M104,176 l24,8" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M296,176 l-24,8" fill="none" stroke="#3c3d44" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M124,102 L120,66 C136,74 148,84 158,95 Z" fill="#f2a9b3"/><path d="M276,102 L280,66 C264,74 252,84 242,95 Z" fill="#f2a9b3"/></g><path d="M100,215 C92,170 100,130 118,108 L112,48 C140,58 162,74 176,92 C192,89 208,89 224,92 C238,74 260,58 288,48 L282,108 C300,130 308,170 300,215 C292,262 250,282 200,282 C150,282 108,262 100,215 Z" fill="none" stroke="#2a2523" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+<g id="eyes" class="L-eyes" inkscape:groupmode="layer" inkscape:label="eyes" data-pivot="200 200">
+<ellipse cx="160" cy="200" rx="11" ry="13" fill="#2a2523"/><ellipse cx="240" cy="200" rx="11" ry="13" fill="#2a2523"/><circle cx="164" cy="195" r="4" fill="#fff"/><circle cx="244" cy="195" r="4" fill="#fff"/>
+</g>
+<g id="blush" class="L-blush" inkscape:groupmode="layer" inkscape:label="blush">
+<ellipse cx="134" cy="228" rx="14" ry="7" fill="#f3a0a8" opacity=".5"/><ellipse cx="266" cy="228" rx="14" ry="7" fill="#f3a0a8" opacity=".5"/>
+</g>
+<g id="nose" class="L-nose" inkscape:groupmode="layer" inkscape:label="nose" data-pivot="200 216">
+<path d="M194,214 h12 l-6,6 Z" fill="#e88f9a" stroke="#2a2523" stroke-width="2.5" stroke-linejoin="round"/>
+</g>
+<g id="mouth" class="L-mouth" inkscape:groupmode="layer" inkscape:label="mouth" data-pivot="200 226">
+<path d="M186,224 q7,8 14,0 q7,8 14,0" fill="none" stroke="#2a2523" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="whiskers" class="L-whiskers" inkscape:groupmode="layer" inkscape:label="whiskers">
+<path d="M104,210 l-30,-5 M104,222 l-30,4 M296,210 l30,-5 M296,222 l30,4" fill="none" stroke="#2a2523" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
